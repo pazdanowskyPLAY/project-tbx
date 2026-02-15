@@ -1,68 +1,73 @@
-====================================================
-    CHANGELOG FOR TBX PREALPHA "CALGARY" (PL_pl)
-====================================================
+# CHANGELOG
+## Guidelines
+> **(data) - TBX (faza rozwoju)(numery wersji) - (tagi)**
 
-LEGENDA:
-(data)- TBX (faza rozwoju i numer)(tryb wersji i numer) - (język)(opis)
-PrzykładY:
-    02/07/2024 - TBX build 2024070200 - (PL_pl)(DEVONLY,MISTAKE)
-    19/05/2023 - TBX Alpha 1.3.0.14 - (PL_pl)(OPENPUB,UNKNOWN)
-    29/11/2019 - TBX (FULL) 1.0.2.0 - (PL_pl)(OPENPUB,BIGRISK)
+> **Fazy rozwoju:** night_build, preAlpha, Alpha, preBeta, Beta, Gamma (pre-release), FULL \
+**Tryby wersji:** API/major, candidate/minor, patch, hotfix, build
 
-Fazy rozwoju: NULL/night_build, preAlpha, Alpha, preBeta, Beta, ClosedPreview (pre-release), FULL
-Tryby wersji: API/major, candidate/minor, patch, hotfix, build
-Numeracja:
-    [NULL]: YYYYMMDDNN (NN-numer,YYYY-rok,DD-dzień,MM-miesiąc,NN-numer)
-	preAlpha oraz Alpha: 0.[minor].[patch].[hotfix]+[build]
-    preBeta oraz Beta: 1.[minor].[patch].[hotfix]+[build]
-    ClosedPreview: [0/1 API].[candidate].[patch].[hotfix]
-    FULL:   [major].[minor].[patch].[hotfix]
-    FULLDEV:[major].[candidate].[patch].[hotfix]+[build]
+> **Numeracja:** \
+    = night_build: YYYYMMDDNN (YYYY-rok,DD-dzień,MM-miesiąc,NN-numer) \
+    = preAlpha oraz Alpha: 0.[minor].[patch].[hotfix]+[night_build] \
+    = preBeta oraz Beta: 1.[minor].[patch].[hotfix]+[night_build] \
+    = Gamma: [0/1 API].[candidate].[patch].[hotfix] \
+    = FULL: [major].[minor].[patch]
 
-Dla deweloperów: wszystko
-Dla społeczności: Alpha, preBeta, Beta, ClosedPreview, FULL, wybrane FULLDEV
-Dla pozostałych: Alpha, Beta, FULL
+> **Tagowanie wydań:** \
+    = 0xPANIC - wersja posiadająca poważne błędy \
+    = 0xRISKY - wersja mogąca uszkodzić dane na komputerze \
+    = 0xERROR - wersja posiadająca błędy \
+    = 0xDEBUG - wersja z narzędziami DEBUG \
+    = DELETED - wersja usunięta \
+    = MISSING - wersja zaginiona \
+    = SCHEDUL - wersja planowana \
+    = UNKNOWN - wersja niesprawdzona \
+    = DEVONLY - wersja dostępna tylko dla deweloperów \
+    = PRIVATE - wersja dostępna dla ograniczonej liczby użytkowników \
+    = OPENPUB - wersja otwarta dla wszystkich
 
-{
-	= 0xPANIC - wersja posiadająca poważne błędy
-	= 0xRISKY - wersja mogąca uszkodzić dane na komputerze
-	= 0xERROR - wersja posiadająca błędy
-	= 0xDEBUG - wersja z narzędziami DEBUG
-	= DELETED - wersja usunięta
-	= MISSING - wersja zaginiona
-	= SCHEDUL - wersja planowana
-	= UNKNOWN - wersja niesprawdzona
-	= DEVONLY - wersja dostępna tylko dla deweloperów
-	= PRIVATE - wersja dostępna dla ograniczonej liczby użytkowników
-	= OPENPUB - wersja otwarta dla wszytskich
-}
+## TBX preAlpha
+Przykład: <pre>
+DD.MM.YYYY - TBX preAlpha 0.0.0.0+XXXXxxxxXXXX - (...)
+    - ...
+</pre>
+<pre>
+Wydane edycje:
+    = ClosedPreviewMinus 2.5b_00 - 2.5b_20 "Experanto"
+    = ClosedPreviewMinus 1.0 - 2.5a "Leila"
+</pre>
 
-DD.MM.YYYY - TBX Alpha 0.0.0.0 - (PL,EN)(PLANNIN, DEVONLY)
-	# zmiana języka na C# (.NET 6, Visual Studio)
-	# nowa struktura folderów
-	# nowe materiały graficzne gry
-	# rozpoczęto prace nad pierwszym aktem gry
-	# nowy instalator - TBX Installer (NSIS)
-	# projekt dostępny na platformie Github (bez kodu źródłowego)
-	# nowa strona internetowa
-	# nowy wygląd TBX_Launcher (tylko dla wersji DEV)
-	# easter eggs!
-	# nowy projekt fabuły
-	# ...
+## TBX Alpha
+Przykład: <pre>
+DD.MM.YYYY - TBX Alpha 0.0.0.0+XXXXxxxxXXXX - (...)
+    - ...
+</pre>
 
-=================================================
-   COPYRIGHT © 2019-2026 - 4amateurscommunity
-=================================================
+## TBX preBeta
+Przykład: <pre>
+DD.MM.YYYY - TBX preBeta 1.0.0.0+XXXXxxxxXXXX - (...)
+    # ...
+</pre>
 
-planowane wersje:
-= FULL 1.0.0.0 - ?.?.?.? "Requiem"
-= ClosedPreview 0.0.0.0 - 1.?.?.? "Discovery"
-= Beta 1.0.0.0 - 1.?.?.? "Odyssey"
-= preBeta 1.0.0.0+???????? - 1.0.0.0+???????? "Emerald"
-= Alpha 0.0.0.0 - 0.?.?.? "Phoenix"
-= preAlpha 0.0.0.0+07031801 - 0.0.0.0+???????? "Calgary"
+## TBX Beta
+Przykład: <pre>
+DD.MM.YYYY - TBX Beta 1.0.0.0+XXXXxxxxXXXX - (...)
+    # ...
+</pre>
 
-= ClosedPreviewMinus 2.5b_00 - 2.5b_20 "Experanto"
-= ClosedPreviewMinus 1.0 - 2.5a "Leila"
+## TBX Gamma
+Przykład: <pre>
+DD.MM.YYYY - TBX Gamma 1.0.0.0 - (...)
+    # ...
+</pre>
 
-AUTORZY: _mtjkh, pulpitaro
+## TBX FULL(DEV)
+Przykład: <pre>
+DD.MM.YYYY - TBX 1.0.0 - (...)
+    # ...
+</pre>
+
+---
+
+
+AUTORZY: _matejakh, pulpitaro \
+COPYRIGHT © 2019-2026 - 4amateurscommunity

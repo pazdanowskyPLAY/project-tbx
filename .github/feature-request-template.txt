@@ -10,4 +10,4 @@ Summary: [explain this feature in longer version]
 [IMPORTANT! include screenshots/concept arts]
 
 
-!!! [please attach proper labels to discord post in #forum] !!!
+!!! [please attach proper labels when posting feature request] !!!

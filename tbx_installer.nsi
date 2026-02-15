@@ -1,5 +1,5 @@
 /*
-	WAï¿½NE! Przed kompilacjï¿½ naleï¿½y skopiowaï¿½ plik LICENSE do folderu gry!
+	WA½NE! Przed kompilacj¥ nale¾y skopiowa† plik LICENSE do folderu gry!
 */
 Unicode false
 ManifestSupportedOS all
@@ -27,11 +27,11 @@ AutoCloseWindow false
 ###
 
 LicenseData "README"
-LicenseText "LICENSE" "Zgadzam siï¿½"
-LicenseForceSelection checkbox "Akceptujï¿½ przedstawione warunki"
+LicenseText "LICENSE" "Zgadzam si©"
+LicenseForceSelection checkbox "Akceptuj© przedstawione warunki"
 SetDateSave on
 
-BrandingText "Instalator stworzony dziï¿½ki NSIS!"
+BrandingText "Instalator stworzony dzi©ki NSIS!"
 InstallButtonText "Zainstaluj"
 UninstallButtonText "Odinstaluj"
 
@@ -75,10 +75,10 @@ Function .onInit
 	System::Call 'kernel32::CreateMutex(p 0, i 0, t "myMutex") p .r1 ?e'
 	Pop $R0
 	StrCmp $R0 0 +3
-   	MessageBox MB_OK|MB_ICONEXCLAMATION "Instalator jest juï¿½ uruchomiony."
+   	MessageBox MB_OK|MB_ICONEXCLAMATION "Instalator jest ju¾ uruchomiony."
    	Abort
 
-	MessageBox MB_YESNO|MB_ICONINFORMATION|MB_DEFBUTTON2 "UWAGA!$\nWersja TBX, ktï¿½rï¿½ chcesz zainstalowaï¿½, jest jeszcze w stanie rozwoju Alpha. Oznacza to, ï¿½e program moï¿½e posiadaï¿½ pewne bï¿½ï¿½dy nawet zagraï¿½ajï¿½ce funkcjonalnoï¿½ci komputera.$\nCzy chcesz kontynuowaï¿½?"\
+	MessageBox MB_YESNO|MB_ICONINFORMATION|MB_DEFBUTTON2 "UWAGA!$\nWersja TBX, kt¢r¥ chcesz zainstalowa†, jest jeszcze w stanie rozwoju Alpha. Oznacza to, ¾e program mo¾e posiada† pewne bˆ©dy nawet zagra¾aj¥ce funkcjonalno˜ci komputera.$\nCzy chcesz kontynuowa†?"\
 		IDYES installyes IDNO installno
 	installno:
 		Abort
@@ -90,10 +90,10 @@ Function un.onInit
 	System::Call 'kernel32::CreateMutex(p 0, i 0, t "myMutex") p .r1 ?e'
 	Pop $R1
 	StrCmp $R1 0 +3
-   	MessageBox MB_OK|MB_ICONEXCLAMATION "Deinstalator jest juï¿½ uruchomiony."
+   	MessageBox MB_OK|MB_ICONEXCLAMATION "Deinstalator jest ju¾ uruchomiony."
    	Abort
 
-	MessageBox MB_YESNO|MB_ICONINFORMATION|MB_DEFBUTTON1 "Czy chcesz odinstalowaï¿½ TBX ${AppVersion}?"\
+	MessageBox MB_YESNO|MB_ICONINFORMATION|MB_DEFBUTTON1 "Czy chcesz odinstalowa† TBX ${AppVersion}?"\
 		IDYES uninstallyes IDNO uninstallno
 	uninstallno:
 		Abort
@@ -103,11 +103,11 @@ FunctionEnd
 ###
 
 Function .onInstFailed
-	MessageBox MB_OK|MB_ICONSTOP "Wystï¿½piï¿½ nieoczekiwany bï¿½ï¿½d podczas instalacji."
+	MessageBox MB_OK|MB_ICONSTOP "Wyst¥piˆ nieoczekiwany bˆ¥d podczas instalacji."
 FunctionEnd
 
 Function .onInstSuccess
-    MessageBox MB_YESNO "Dziï¿½kujemy serdecznie za skorzystanie z wersji ${AppVersion}. Czy chcesz zobaczyï¿½ plik LICENSE?" IDNO NoLicense
+    MessageBox MB_YESNO "Dzi©kujemy serdecznie za skorzystanie z wersji ${AppVersion}. Czy chcesz zobaczy† plik LICENSE?" IDNO NoLicense
     	Exec 'notepad.exe $INSTDIR/LICENSE'
 	NoLicense:
 FunctionEnd

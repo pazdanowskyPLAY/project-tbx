@@ -12,4 +12,4 @@ Steps: [how did you discover this bug?]
 [IMPORTANT! include screenshots]
 
 
-!!! [please attach proper labels to discord post in #forum] !!!
+!!! [please attach proper labels when posting bug report] !!!

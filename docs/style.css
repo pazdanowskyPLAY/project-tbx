@@ -1,14 +1,17 @@
 /* main css file for website */
 
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: Roboto;
-    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+    src: url(./Roboto/Roboto-Regular.ttf);
 }
 
 body {
     font-family: Roboto,'Verdana','Tahoma', sans-serif;
     font-size: 16px;
-    color: #ffffff;
     background-color: #808080;
     word-wrap: break-word;
 }
@@ -19,6 +22,7 @@ body {
         margin: auto;
         padding: 10px;
         border: 5px solid #000000;
+        background-color: #FFFFFF;
     }
 
         /* ---------- header ---------- */
@@ -31,8 +35,7 @@ body {
                 float: left;
                 margin-bottom: 10px;
                 width: 600px; 
-                height: 200px;
-                image-rendering: pixelated;
+                height: auto;
             }
 
             #loginbox {
@@ -46,10 +49,6 @@ body {
                     float: right;
                 }
 
-                #loginbox, #start {
-                    color: #ffffff;
-                }
-
                 .loginbox-textboxes, .loginbox-buttons {
                     padding: 5px;
                     margin: 2px;
@@ -60,7 +59,6 @@ body {
                     width: 300px;
                 }
 
-
                 #if-dev {
                     margin-top: 10px;
                 }
@@ -70,10 +68,11 @@ body {
 
         /* navbar and visuals */
         #navbar {
-            width:998px;
+            width: 100%;
             background-color: #404040;
             float: left;
-            border: 1px solid #ffffff;
+            border: 1px solid #000000;
+            margin-bottom: 10px;
         }
 
         #navbar a {
@@ -82,36 +81,33 @@ body {
             text-align: center;
             padding: 10px 10px;
         }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-        }
-        .sticky + #articles {
-            padding-top: 45px;
-        }
         /* end of navbar and visuals */
 
 
 
         /* ---------- info boxes ---------- */
         .info-red, .info-blue, .info-yellow {
-            padding: 0px 10px 0px 10px;
-            background-color: #404040;
-            margin: 10px 0px 10px 0px;
+            padding: 10px 10px 10px 10px;
+            float: left;
+            width: 100%;
+            margin: 0px 0px 10px 0px;
+            text-align: center;
         }
 
         .info-red {
-            border: 5px solid #ff0000;
+            border: 3px solid #ff0000;
             border-left: 20px solid #ff0000;
+            border-right: 20px solid #ff0000;
         }
         .info-blue {
-            border: 5px solid #006eff;
+            border: 3px solid #006eff;
             border-left: 20px solid #006eff;
+            border-right: 20px solid #006eff;
         }
         .info-yellow {
-            border: 5px solid #e5ff00;
+            border: 3px solid #e5ff00;
             border-left: 20px solid #e5ff00;
+            border-right: 20px solid #e5ff00;
         }
         /* ---------- end of info boxes ---------- */
         
@@ -120,11 +116,11 @@ body {
         /* ---------- articles ---------- */
         #articles {
             clear:both;
-            border: 1px solid #ffffff
+            border: 1px solid #000000
         }
 
             .sections {
-                border: 1px solid #ffffff;
+                border: 1px solid #000000;
                 padding: 0px 10px 10px 10px;
             }
 
